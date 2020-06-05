@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--<link rel="stylesheet" type="text/css" href="site-deconstruct.css">-->
+<style>
+
+:root{
+    background-color: RGB (255,255,255);
+}
+
+body{
+  width:100%;
+  height:100%;  
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+header{
+  width:100%;
+  height:3.5%;  
+  position: absolute;
+  display: flexbox;
+  top:0;
+  left:0;
+}
+
+footer{
+  width:100%;
+  height:3.5%;   
+  position: absolute;
+  display: flexbox;
+  bottom:0;
+  background-color: rgb(242, 242, 242);
+  left:0;
+  margin-bottom: 10px;
+}
+
+#left_header{
+   position:absolute;
+   display: flex;
+   top:0;
+   left:0;
+}
+
+#right_header{
+   position:absolute;
+   display: flex;
+   top:0;
+   right:0;
+   min-width: 220px;
+   padding-left: 30px;
+    padding-right: 30px;
+}
+
+#footer_header_clickable{
+    margin: 10px;
+}
+
+.nav-bar{
+    width: 20px;
+    height: 20px;
+  
+}
+
+a{
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: rgb(34, 34, 34);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.sign-in{
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    text-align: center;
+    background: #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    height: 25px;
+    vertical-align: middle;
+    color: white !important;
+    line-height: 28px;
+    padding: 0 12px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font-family: arial,sans-serif;
+    display: inline-block;
+    position: relative;
+
+}
+
+#left_footer{
+   position:absolute;
+   display: flex;
+   bottom:0;
+   left:0;
+}
+
+#right_footer{
+   position:absolute;
+   display: flex;
+   bottom:0;
+   right:0;
+}
+
+#main_search_btns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 12%;
+
+}
+
+#logo{
+    height: 112px;
+    width: 262px;
+    align-self: center;
+}
+
+#search-grid{
+    display: grid;
+    border: 0px 0px 10px rgb(34, 34, 34);
+    height: 25px;
+    width: 550px;
+    background: #fff;
+    color: #222;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#magnifying_glass{
+    width: 18px;
+    height: 20px;
+    align-self: center;
+    grid-area: 1 /2 / 1 /2;
+
+    margin-left: -87%;
+}
+
+#mic_icon{
+    width: 18px;
+    height: 20px;
+    align-self: center;
+    margin-left: -1550%;
+    grid-area: 1 / 4 / 2 / 4;
+}
+#search_btn{
+    background-color:rgb(242, 242, 242);
+    border: none;
+    float: left;
+}
+
+#lucky_btn{
+    background-color: rgb(242, 242, 242);
+    border: none;
+    float: right;
+}
+
+#search_input_area{
+    border-radius: 30%;
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgb(95, 95, 95);
+    grid-area: 1 / 1 / 2 / 4;
+    margin-left: -49%;
+    margin-right: auto;
+}
+
+#search_input_area:hover{
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgb(197, 197, 197);
+}
+
+</style>
+
+<html>
+    <body>
+
+        <header id="header">
+            <div id="left_header">
+                <div id="footer_header_clickable" class="text"><a href="https://about.google/?utm_source=google-RU&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></div>
+                <div id="footer_header_clickable" class="text"><a href="https://store.google.com/regionpicker">Store</a></div>
+            </div>
+
+            <div id="right_header">
+                <div id="footer_header_clickable" class="text"><a href="https://www.gmail.com/mail">Gmail</a></div>
+                <div id="footer_header_clickable" class="text"><a href="https://www.google.ru/imghp?hl=en&tab=wi&ogbl">Images</a></div>
+                <a href="https://about.google/intl/en/products/?tab=wh"><img alt="navigation bar" src="https://cdn.iconscout.com/icon/free/png-256/grid-application-menu-artboard-layer-15667.png" id="footer_header_clickable" class="nav-bar"></a>
+                <div id="footer_header_clickable" class="sign-in"><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Den%26sa%3DX%26ved%3D0ahUKEwi5-_-u-djpAhVByKYKHcgxB5kQPAgH&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a></div>
+            </div>
+        </header>
+
+        <main>
+
+            <div id="main_search_btns">
+                <img id="logo" src="https://logo-logos.com/wp-content/uploads/2016/11/Google_logo_logotype.png" alt="Google logo">
+                <div id="search-grid">
+                    <img id="magnifying_glass" style="z-index: 1000;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png">
+                    <input id="search_input_area" type="text">
+                    <img id="mic_icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" alt="mic icon">
+                </div>
+                <div id="btns_search">
+                    <button id="search_btn">Google Search</button>
+                    <button id="lucky_btn">I'm Feeling Lucky</button>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="footer">
+            <div id="left_footer">
+                <div id="footer_header_clickable" class="text"><a href="https://ads.google.com/intl/en_ru/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></div>
+                <div id="footer_header_clickable" class="text"><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></div>
+                <div id="footer_header_clickable" class="text"><a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a></div>
+            </div>
+            <div id="right_footer">
+                <div id="footer_header_clickable" class="text"><a href="https://policies.google.com/privacy?fg=1">Privacy</a></div>
+                <div id="footer_header_clickable" class="text"><a href="https://policies.google.com/terms?fg=1">Terms</a></div>
+                <div id="footer_header_clickable" class="text"><a href="https://www.google.com/preferences?hl=en">Setiings</a></div>
+            </div>
+        </footer>
+        
+       
+    </body>
+</html>
